@@ -10,9 +10,11 @@ import os
 
 from django.core.asgi import get_asgi_application
 
-from saleor.asgi.health_check import health_check
+from .gzip_compression import gzip_compression
+from .health_check import health_check
 
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "saleor.settings")
 
 application = get_asgi_application()
 application = health_check(application, "/health/")
+application = gzip_compression(application)

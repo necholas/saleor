@@ -10,6 +10,8 @@ All notable, unreleased changes to this project will be documented in this file.
 
 ### Other changes
 
+- Added native support for gzip compression - #11833 by @patrys
+
 # 3.11.0
 
 ### Highlights
