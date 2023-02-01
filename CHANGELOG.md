@@ -8,6 +8,8 @@ All notable, unreleased changes to this project will be documented in this file.
 
 ### GraphQL API
 
+- Add meta fields to `ProductMedia` model - #11894 by @zedzior
+
 ### Other changes
 
 - Enhance webhook's subscription query validation. Apply the validation and event inheritance to manifest validation - #11797 by @zedzior
