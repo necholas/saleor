@@ -8,6 +8,12 @@ All notable, unreleased changes to this project will be documented in this file.
 
 ### GraphQL API
 
+Add new asynchronous events related to media: #11918 by @zedzior
+  - `PRODUCT_MEDIA CREATED`
+  - `PRODUCT_MEDIA_UPDATED`
+  - `PRODUCT_MEDIA_DELETED`
+  - `THUMBNAIL_CREATED`
+
 ### Other changes
 
 # 3.11.0
