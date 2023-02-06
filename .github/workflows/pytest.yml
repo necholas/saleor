@@ -101,8 +101,5 @@ jobs:
           upload_secret_key: ${{ secrets.QUERIES_UPLOAD_SECRET }}
         if: github.event_name == 'push' && github.repository == 'saleor/saleor'
 
-      # Run linters and Django related checks
-      - name: Run Linters and Checks
-        run: |
-          pre-commit run --all
-        if: ${{ always() }}
+      # Run pre-commit
+      - uses: pre-commit/action@v3.0.0
